@@ -579,10 +579,17 @@ margin-left: 1px;
   /* margin: 0 200px; */
   width: 560px;
   
-  background-color: #ed1c24;
+  background-color: #e2bfc1;
   
 }
 .about-list li:nth-child(3) a::before{
   background-position: 0 0;
 }
 /* 하단 */
+/* top버튼 */
+.top-button{
+position: fixed;
+right: 0;
+bottom: 0;
+z-index: 999;
+}
