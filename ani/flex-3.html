@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 너비없으면 body너비를 따라감 */
+        .container{
+           
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 30px;
+            display: flex;
+          }  
+        .box{
+            background-color: #222;
+            padding: 5px 45px;
+            margin: 5px;
+        }
+        #opt1{
+            flex-flow: row wrap/*왼쪽에서 오른쪽, 기본값 여러줄로 배열*/;
+        }
+        #opt2{
+            flex-flow: row nowrap;/*한줄로 배열*/
+        }
+
+
+        p{
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="opt1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>    
+      </div>
+      <div class="container" id="opt2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>    
+      </div>
+</body>
+</html>
