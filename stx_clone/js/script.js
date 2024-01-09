@@ -50,7 +50,7 @@ window.onload = function () {
 // 안내창 스크립트
 const body = document.querySelector("body");
 const modal = document.querySelector(".modal-wrap");
-
+const modalClose = document.querySelector(".modal-close");
 // isOpen 값에 따라 스크롤을 제어하는 함수
 function controlScroll(isOpen) {
   if (isOpen) {
@@ -64,7 +64,7 @@ function controlScroll(isOpen) {
 const isOpen = true;
 controlScroll(isOpen);
 
-modal.addEventListener("click", function () {
+modalClose.addEventListener("click", function () {
   modal.style.display = "none";
  
   // 모달이 닫힐 때는 스크롤을 다시 활성화
